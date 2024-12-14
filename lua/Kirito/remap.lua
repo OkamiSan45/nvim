@@ -39,7 +39,7 @@ vim.keymap.set("i", "<C-c>", "<Esc>")
 vim.keymap.set("n", "Q", "<nop>")
 
 -- Open tmux sessionizer
-vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
+vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww ~/.config/tmux/tmux-sessionizer <CR>")
 
 -- LSP format
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
@@ -60,7 +60,7 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 vim.keymap.set("n", "<leader>ee", "oif err != nil {<CR>}<Esc>Oreturn err<Esc>")
 
 -- Open packer configuration
-vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.dotfiles/.config/nvim<CR>")
+vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.config/nvim<CR>")
 
 -- Start CellularAutomaton effect
 vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>")
